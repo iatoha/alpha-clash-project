@@ -7,10 +7,15 @@ function showElementById(elementById){
     element.classList.remove('hidden');
 }
 
+function setAddBackgroundColorById (elementId){
+    const element =document.getElementById(elementId);
+    element.classList.add('bg-orange-400');
+}
+
 function getARandomAlphabet (){
     const alphabetString ='abcdefghijklmnopqrstuvwxyz';
     const alphabets =alphabetString.split('');
-    console.log(alphabets);
+    // console.log(alphabets);
 
     // get a random number betwen 0 to 25
     const randimNumber =Math.random()*25;
